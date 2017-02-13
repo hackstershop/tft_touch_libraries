@@ -2,15 +2,11 @@
 #include <Adafruit_GFX.h>
 #include <TouchScreen.h>
 #include <Adafruit_TFTLCD.h>
-#include <Wire.h>
-
 
 #define YP A3  // must be an analog pin, use "An" notation!
 #define XM A2  // must be an analog pin, use "An" notation!
 #define YM 9   // can be a digital pin
 #define XP 8   // can be a digital pin
-#define DHTPIN 11
-#define DHTTYPE DHT11   // DHT 11
 // calibration mins and max for raw data when touching edges of screen
 // YOU CAN USE THIS SKETCH TO DETERMINE THE RAW X AND Y OF THE EDGES TO GET YOUR HIGHS AND LOWS FOR X AND Y
 #define TS_MINX 210
@@ -113,11 +109,6 @@ void loop() {
         tft.fillCircle(200, 160, 50, WHITE);
 
         }
-
-
-    
-   
-
    } 
 
 } 
